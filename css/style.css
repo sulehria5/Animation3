@@ -1,0 +1,47 @@
+
+body{
+    margin: 0;
+    background: #000;
+  }
+  section{
+    height: 100vh;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+  }
+  div{
+    height: 40px;
+    width: 40px;
+    margin-right: 20px;
+    animation: animate 1s ease infinite
+  }
+  div:nth-child(1){
+    background: #EF5350;
+  }
+  div:nth-child(2){
+    background: #673AB7;
+    animation-delay:.2s
+  }
+  div:nth-child(3){
+    background: #689F38;
+    animation-delay:.4s
+  }
+  div:nth-child(4){
+    background:#EF6C00 ;
+    animation-delay:.6s
+  }
+  div:nth-child(5){
+    background:#C51162 ;
+    animation-delay:.8s
+  }
+  @keyframes animate{
+    0%,100%{
+      transform:translateY(0);
+    }
+    33%{
+      transform:translateY(-20px);
+    }
+    66%{
+      transform:translateY(20px);
+    }
+  }
